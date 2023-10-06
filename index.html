@@ -9,11 +9,9 @@
 </head>
 
 <body>
-    <h2>Welcome to the Rock-Paper-Scissors Game</h2>
+    <h1 id>Welcome to the Rock-Paper-Scissors Game</h1>
 
-    <button id="connectButton" onclick="connectWallet()">Click to Connect with Metamask</button>
-    <div id="metamaskErrorMessage"></div>
-
+    <button id="conwallet" onclick="connectWallet()">Click to Connect with Metamask</button>
     <div id="gameControls">
         <label for="choice">Select:</label>
         <select id="choice">
@@ -23,12 +21,12 @@
         </select>
 
         <div>
-            <label for="betAmount">Enter Bet Amount (in Ether):</label>
-            <input type="text" id="betAmount" placeholder="Enter your bet amount">
+            <label for="betAmount">Bet:</label>
+            <input type="text" id="betAmount" placeholder="(Ether)">
         </div>
 
         <div>
-            <button onclick="playGame()">Play Game</button>
+            <button onclick="playGame()">Start a game</button>
         </div>
 
         <div id="result"></div>
