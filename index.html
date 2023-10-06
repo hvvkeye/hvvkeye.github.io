@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS Game</title>
+    <title>Rock-Paper-Scissors Game</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <h2>RPS Game</h2>
+    <h2>Welcome to the Rock-Paper-Scissors Game</h2>
 
-    <button id="connectButton" onclick="connectWallet()">Connect MetaMask</button>
+    <button id="connectButton" onclick="connectWallet()">Click to Connect with Metamask</button>
     <div id="metamaskErrorMessage"></div>
 
-    <div id="gameControls" style="display:none;">
-        <label for="choice">Choose your move:</label>
+    <div id="gameControls">
+        <label for="choice">Select:</label>
         <select id="choice">
             <option value="0">Rock</option>
             <option value="1">Paper</option>
@@ -23,12 +23,12 @@
         </select>
 
         <div>
-            <label for="betAmount">Bet Amount (in Ether):</label>
+            <label for="betAmount">Enter Bet Amount (in Ether):</label>
             <input type="text" id="betAmount" placeholder="Enter your bet amount">
         </div>
 
         <div>
-            <button onclick="playGame()">Play</button>
+            <button onclick="playGame()">Play Game</button>
         </div>
 
         <div id="result"></div>
